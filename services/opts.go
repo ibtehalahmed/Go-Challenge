@@ -2,7 +2,6 @@ package opts
 
 import (
 	"github.com/ibtehalahmed/Go-Challenge/models"
-	"gopkg.in/mgo.v2/bson"
 )
 
 type RulSet struct {
@@ -13,7 +12,7 @@ type IRulSet interface {
 }
 func NewRuleSet() *RulSet {
 	var ruleSet models.RuleSet
-	ruleSet.Id = bson.NewObjectId()
+	ruleSet.Id = "1"
 	r := RulSet{}
 	r.ruleSet = ruleSet
 	return &r

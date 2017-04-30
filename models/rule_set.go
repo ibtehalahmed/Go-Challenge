@@ -1,9 +1,8 @@
 package models
 
-import "gopkg.in/mgo.v2/bson"
 
 type RuleSet struct  {
-	Id bson.ObjectId
+	Id string
 	Relation string
 	Options  []string
 }
